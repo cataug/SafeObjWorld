@@ -1,0 +1,51 @@
+====================================================================================================
+SafeObjWorld V2 runner
+{
+  "mode": "eval_model",
+  "dataset_root": "/home/tahiti/SafeObjWorld/data/DAVIS2017",
+  "run_root": "/home/tahiti/SafeObjWorld/runs_v2_full",
+  "year": "2017",
+  "method": "safeobjworld_r_image_only",
+  "stress": "blur",
+  "prefix_len": 3,
+  "max_h": 5,
+  "image_size": 192,
+  "batch_size": 8,
+  "epochs": 8,
+  "lr": 0.0002,
+  "weight_decay": 0.0001,
+  "max_train_samples": 0,
+  "max_val_samples": 0,
+  "num_workers": 4,
+  "seed": 42,
+  "eval_k_override": 0,
+  "amp": true,
+  "cpu": false,
+  "skip_existing": true,
+  "log_every": 25
+}
+====================================================================================================
+[eval model] method=safeobjworld_r_image_only stress=blur device=cuda cfg={'stress_train': True, 'temporal_weight': 0.05, 'split_weight': 0.005, 'area_weight': 0.1, 'mc_eval': True, 'eval_k': 5}
+/home/tahiti/SafeObjWorld/code/safeobjworld_v2.py:1507: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location="cpu")
+[eval model:safeobjworld_r_image_only:blur] step=0/439 rows=40
+[eval model:safeobjworld_r_image_only:blur] step=25/439 rows=1040
+[eval model:safeobjworld_r_image_only:blur] step=50/439 rows=2040
+[eval model:safeobjworld_r_image_only:blur] step=75/439 rows=3040
+[eval model:safeobjworld_r_image_only:blur] step=100/439 rows=4040
+[eval model:safeobjworld_r_image_only:blur] step=125/439 rows=5040
+[eval model:safeobjworld_r_image_only:blur] step=150/439 rows=6040
+[eval model:safeobjworld_r_image_only:blur] step=175/439 rows=7040
+[eval model:safeobjworld_r_image_only:blur] step=200/439 rows=8040
+[eval model:safeobjworld_r_image_only:blur] step=225/439 rows=9040
+[eval model:safeobjworld_r_image_only:blur] step=250/439 rows=10040
+[eval model:safeobjworld_r_image_only:blur] step=275/439 rows=11040
+[eval model:safeobjworld_r_image_only:blur] step=300/439 rows=12040
+[eval model:safeobjworld_r_image_only:blur] step=325/439 rows=13040
+[eval model:safeobjworld_r_image_only:blur] step=350/439 rows=14040
+[eval model:safeobjworld_r_image_only:blur] step=375/439 rows=15040
+[eval model:safeobjworld_r_image_only:blur] step=400/439 rows=16040
+[eval model:safeobjworld_r_image_only:blur] step=425/439 rows=17040
+[done eval] rows=/home/tahiti/SafeObjWorld/runs_v2_full/eval/safeobjworld_r_image_only/H5/blur/rows.csv
+[done eval] summary=/home/tahiti/SafeObjWorld/runs_v2_full/eval/safeobjworld_r_image_only/H5/blur/summary.csv
+[time] 337.2s

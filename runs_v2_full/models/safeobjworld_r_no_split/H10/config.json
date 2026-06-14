@@ -1,0 +1,34 @@
+{
+  "args": {
+    "mode": "train",
+    "dataset_root": "/home/tahiti/SafeObjWorld/data/DAVIS2017",
+    "run_root": "/home/tahiti/SafeObjWorld/runs_v2_full",
+    "year": "2017",
+    "method": "safeobjworld_r_no_split",
+    "stress": "clean",
+    "prefix_len": 3,
+    "max_h": 10,
+    "image_size": 192,
+    "batch_size": 8,
+    "epochs": 10,
+    "lr": 0.0002,
+    "weight_decay": 0.0001,
+    "max_train_samples": 0,
+    "max_val_samples": 0,
+    "num_workers": 4,
+    "seed": 42,
+    "eval_k_override": 0,
+    "amp": true,
+    "cpu": false,
+    "skip_existing": true,
+    "log_every": 25
+  },
+  "method_cfg": {
+    "stress_train": true,
+    "temporal_weight": 0.05,
+    "split_weight": 0.0,
+    "area_weight": 0.1,
+    "mc_eval": true,
+    "eval_k": 5
+  }
+}

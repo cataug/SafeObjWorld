@@ -1,0 +1,17 @@
+451M  .venv_safeobjworld/lib/python3.10/site-packages/triton/_C/libtriton.so
+240M  .venv_safeobjworld/lib/python3.10/site-packages/nvidia/nccl/lib/libnccl.so.2
+110M  .venv_safeobjworld/lib/python3.10/site-packages/nvidia/cusolver/lib/libcusolver.so.11
+184M  .venv_safeobjworld/lib/python3.10/site-packages/nvidia/cufft/lib/libcufft.so.11
+492M  .venv_safeobjworld/lib/python3.10/site-packages/nvidia/cublas/lib/libcublasLt.so.12
+103M  .venv_safeobjworld/lib/python3.10/site-packages/nvidia/cublas/lib/libcublas.so.12
+253M  .venv_safeobjworld/lib/python3.10/site-packages/nvidia/cusparse/lib/libcusparse.so.12
+230M  .venv_safeobjworld/lib/python3.10/site-packages/nvidia/cudnn/lib/libcudnn_adv.so.9
+544M  .venv_safeobjworld/lib/python3.10/site-packages/nvidia/cudnn/lib/libcudnn_engines_precompiled.so.9
+104M  .venv_safeobjworld/lib/python3.10/site-packages/nvidia/cudnn/lib/libcudnn_ops.so.9
+865M  .venv_safeobjworld/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so
+416M  .venv_safeobjworld/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so
+1.5G  runs_v2_full/RESULTS/all_rows.csv
+142M  runs_musthave/RESULTS/all_rows.csv
+795M  data/DAVIS2017/DAVIS-2017-trainval-480p.zip
+142MB  runs_musthave/RESULTS/all_rows.csv
+1483MB  runs_v2_full/RESULTS/all_rows.csv

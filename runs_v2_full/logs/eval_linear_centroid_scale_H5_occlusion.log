@@ -1,0 +1,48 @@
+====================================================================================================
+SafeObjWorld V2 runner
+{
+  "mode": "eval_baseline",
+  "dataset_root": "/home/tahiti/SafeObjWorld/data/DAVIS2017",
+  "run_root": "/home/tahiti/SafeObjWorld/runs_v2_full",
+  "year": "2017",
+  "method": "linear_centroid_scale",
+  "stress": "occlusion",
+  "prefix_len": 3,
+  "max_h": 5,
+  "image_size": 192,
+  "batch_size": 8,
+  "epochs": 8,
+  "lr": 0.0002,
+  "weight_decay": 0.0001,
+  "max_train_samples": 0,
+  "max_val_samples": 0,
+  "num_workers": 4,
+  "seed": 42,
+  "eval_k_override": 0,
+  "amp": true,
+  "cpu": false,
+  "skip_existing": true,
+  "log_every": 25
+}
+====================================================================================================
+[eval baseline:linear_centroid_scale:occlusion] step=0/439 rows=40
+[eval baseline:linear_centroid_scale:occlusion] step=25/439 rows=1040
+[eval baseline:linear_centroid_scale:occlusion] step=50/439 rows=2040
+[eval baseline:linear_centroid_scale:occlusion] step=75/439 rows=3040
+[eval baseline:linear_centroid_scale:occlusion] step=100/439 rows=4040
+[eval baseline:linear_centroid_scale:occlusion] step=125/439 rows=5040
+[eval baseline:linear_centroid_scale:occlusion] step=150/439 rows=6040
+[eval baseline:linear_centroid_scale:occlusion] step=175/439 rows=7040
+[eval baseline:linear_centroid_scale:occlusion] step=200/439 rows=8040
+[eval baseline:linear_centroid_scale:occlusion] step=225/439 rows=9040
+[eval baseline:linear_centroid_scale:occlusion] step=250/439 rows=10040
+[eval baseline:linear_centroid_scale:occlusion] step=275/439 rows=11040
+[eval baseline:linear_centroid_scale:occlusion] step=300/439 rows=12040
+[eval baseline:linear_centroid_scale:occlusion] step=325/439 rows=13040
+[eval baseline:linear_centroid_scale:occlusion] step=350/439 rows=14040
+[eval baseline:linear_centroid_scale:occlusion] step=375/439 rows=15040
+[eval baseline:linear_centroid_scale:occlusion] step=400/439 rows=16040
+[eval baseline:linear_centroid_scale:occlusion] step=425/439 rows=17040
+[done baseline] rows=/home/tahiti/SafeObjWorld/runs_v2_full/eval/linear_centroid_scale/H5/occlusion/rows.csv
+[done baseline] summary=/home/tahiti/SafeObjWorld/runs_v2_full/eval/linear_centroid_scale/H5/occlusion/summary.csv
+[time] 50.6s

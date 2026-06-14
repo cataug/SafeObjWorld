@@ -1,0 +1,47 @@
+====================================================================================================
+SafeObjWorld V2 runner
+{
+  "mode": "eval_baseline",
+  "dataset_root": "/home/tahiti/SafeObjWorld/data/DAVIS2017",
+  "run_root": "/home/tahiti/SafeObjWorld/runs_v2_full",
+  "year": "2017",
+  "method": "copy_last",
+  "stress": "occlusion",
+  "prefix_len": 3,
+  "max_h": 10,
+  "image_size": 192,
+  "batch_size": 8,
+  "epochs": 8,
+  "lr": 0.0002,
+  "weight_decay": 0.0001,
+  "max_train_samples": 0,
+  "max_val_samples": 0,
+  "num_workers": 4,
+  "seed": 42,
+  "eval_k_override": 0,
+  "amp": true,
+  "cpu": false,
+  "skip_existing": true,
+  "log_every": 25
+}
+====================================================================================================
+[eval baseline:copy_last:occlusion] step=0/401 rows=80
+[eval baseline:copy_last:occlusion] step=25/401 rows=2080
+[eval baseline:copy_last:occlusion] step=50/401 rows=4080
+[eval baseline:copy_last:occlusion] step=75/401 rows=6080
+[eval baseline:copy_last:occlusion] step=100/401 rows=8080
+[eval baseline:copy_last:occlusion] step=125/401 rows=10080
+[eval baseline:copy_last:occlusion] step=150/401 rows=12080
+[eval baseline:copy_last:occlusion] step=175/401 rows=14080
+[eval baseline:copy_last:occlusion] step=200/401 rows=16080
+[eval baseline:copy_last:occlusion] step=225/401 rows=18080
+[eval baseline:copy_last:occlusion] step=250/401 rows=20080
+[eval baseline:copy_last:occlusion] step=275/401 rows=22080
+[eval baseline:copy_last:occlusion] step=300/401 rows=24080
+[eval baseline:copy_last:occlusion] step=325/401 rows=26080
+[eval baseline:copy_last:occlusion] step=350/401 rows=28080
+[eval baseline:copy_last:occlusion] step=375/401 rows=30080
+[eval baseline:copy_last:occlusion] step=400/401 rows=32080
+[done baseline] rows=/home/tahiti/SafeObjWorld/runs_v2_full/eval/copy_last/H10/occlusion/rows.csv
+[done baseline] summary=/home/tahiti/SafeObjWorld/runs_v2_full/eval/copy_last/H10/occlusion/summary.csv
+[time] 58.1s

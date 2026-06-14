@@ -1,0 +1,9 @@
+SafeObjWorld DAVIS2017 dataset check
+================================================================================
+Source: /home/tahiti/ECCV_DATASETS/07_DAVIS2017
+Target: /home/tahiti/SafeObjWorld/data/DAVIS2017
+Moved/copied: True
+Delete source after copy: False
+
+Source files before: 12424
+Target files after: 12424

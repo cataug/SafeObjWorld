@@ -1,0 +1,395 @@
+====================================================================================================
+SafeObjWorld runner
+{
+  "mode": "train",
+  "dataset_root": "/home/tahiti/SafeObjWorld/data/DAVIS2017",
+  "run_root": "/home/tahiti/SafeObjWorld/runs_musthave",
+  "year": "2017",
+  "method": "safeobj_no_geom",
+  "stress": "clean",
+  "prefix_len": 3,
+  "max_h": 5,
+  "image_size": 192,
+  "batch_size": 8,
+  "epochs": 8,
+  "lr": 0.0002,
+  "weight_decay": 0.0001,
+  "temporal_weight": 0.05,
+  "stress_train": 1,
+  "eval_k": 5,
+  "max_train_samples": 0,
+  "max_val_samples": 0,
+  "num_workers": 4,
+  "seed": 42,
+  "amp": true,
+  "cpu": false,
+  "skip_existing": true,
+  "log_every": 25
+}
+====================================================================================================
+[train] method=safeobj_no_geom device=cuda out=/home/tahiti/SafeObjWorld/runs_musthave/models/safeobj_no_geom/H5
+/home/tahiti/SafeObjWorld/code/safeobjworld_run.py:1055: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(device.type == "cuda" and args.amp))
+/home/tahiti/SafeObjWorld/code/safeobjworld_run.py:1072: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=(device.type == "cuda" and args.amp)):
+[train:safeobj_no_geom:H5] epoch=1/8 step=0/1086 loss=1.6666
+[train:safeobj_no_geom:H5] epoch=1/8 step=25/1086 loss=1.6256
+[train:safeobj_no_geom:H5] epoch=1/8 step=50/1086 loss=1.2764
+[train:safeobj_no_geom:H5] epoch=1/8 step=75/1086 loss=1.1358
+[train:safeobj_no_geom:H5] epoch=1/8 step=100/1086 loss=1.1030
+[train:safeobj_no_geom:H5] epoch=1/8 step=125/1086 loss=1.1131
+[train:safeobj_no_geom:H5] epoch=1/8 step=150/1086 loss=1.0767
+[train:safeobj_no_geom:H5] epoch=1/8 step=175/1086 loss=1.0791
+[train:safeobj_no_geom:H5] epoch=1/8 step=200/1086 loss=1.0631
+[train:safeobj_no_geom:H5] epoch=1/8 step=225/1086 loss=1.0792
+[train:safeobj_no_geom:H5] epoch=1/8 step=250/1086 loss=1.0785
+[train:safeobj_no_geom:H5] epoch=1/8 step=275/1086 loss=1.0622
+[train:safeobj_no_geom:H5] epoch=1/8 step=300/1086 loss=1.0617
+[train:safeobj_no_geom:H5] epoch=1/8 step=325/1086 loss=1.0790
+[train:safeobj_no_geom:H5] epoch=1/8 step=350/1086 loss=1.0828
+[train:safeobj_no_geom:H5] epoch=1/8 step=375/1086 loss=1.0454
+[train:safeobj_no_geom:H5] epoch=1/8 step=400/1086 loss=1.0485
+[train:safeobj_no_geom:H5] epoch=1/8 step=425/1086 loss=1.0754
+[train:safeobj_no_geom:H5] epoch=1/8 step=450/1086 loss=1.0656
+[train:safeobj_no_geom:H5] epoch=1/8 step=475/1086 loss=1.0536
+[train:safeobj_no_geom:H5] epoch=1/8 step=500/1086 loss=1.0377
+[train:safeobj_no_geom:H5] epoch=1/8 step=525/1086 loss=1.0689
+[train:safeobj_no_geom:H5] epoch=1/8 step=550/1086 loss=1.0541
+[train:safeobj_no_geom:H5] epoch=1/8 step=575/1086 loss=1.0382
+[train:safeobj_no_geom:H5] epoch=1/8 step=600/1086 loss=1.0498
+[train:safeobj_no_geom:H5] epoch=1/8 step=625/1086 loss=1.0455
+[train:safeobj_no_geom:H5] epoch=1/8 step=650/1086 loss=1.0306
+[train:safeobj_no_geom:H5] epoch=1/8 step=675/1086 loss=1.0281
+[train:safeobj_no_geom:H5] epoch=1/8 step=700/1086 loss=1.0474
+[train:safeobj_no_geom:H5] epoch=1/8 step=725/1086 loss=1.0556
+[train:safeobj_no_geom:H5] epoch=1/8 step=750/1086 loss=1.0325
+[train:safeobj_no_geom:H5] epoch=1/8 step=775/1086 loss=1.0362
+[train:safeobj_no_geom:H5] epoch=1/8 step=800/1086 loss=1.0350
+[train:safeobj_no_geom:H5] epoch=1/8 step=825/1086 loss=1.0310
+[train:safeobj_no_geom:H5] epoch=1/8 step=850/1086 loss=1.0591
+[train:safeobj_no_geom:H5] epoch=1/8 step=875/1086 loss=1.0334
+[train:safeobj_no_geom:H5] epoch=1/8 step=900/1086 loss=1.0300
+[train:safeobj_no_geom:H5] epoch=1/8 step=925/1086 loss=1.0249
+[train:safeobj_no_geom:H5] epoch=1/8 step=950/1086 loss=1.0377
+[train:safeobj_no_geom:H5] epoch=1/8 step=975/1086 loss=1.0313
+[train:safeobj_no_geom:H5] epoch=1/8 step=1000/1086 loss=1.0357
+[train:safeobj_no_geom:H5] epoch=1/8 step=1025/1086 loss=1.0355
+[train:safeobj_no_geom:H5] epoch=1/8 step=1050/1086 loss=1.0315
+[train:safeobj_no_geom:H5] epoch=1/8 step=1075/1086 loss=1.0235
+[epoch done:safeobj_no_geom:H5] epoch=1 train=1.0764 val=1.0279 best=1.0279
+[train:safeobj_no_geom:H5] epoch=2/8 step=0/1086 loss=0.9874
+[train:safeobj_no_geom:H5] epoch=2/8 step=25/1086 loss=1.0259
+[train:safeobj_no_geom:H5] epoch=2/8 step=50/1086 loss=1.0229
+[train:safeobj_no_geom:H5] epoch=2/8 step=75/1086 loss=1.0424
+[train:safeobj_no_geom:H5] epoch=2/8 step=100/1086 loss=1.0312
+[train:safeobj_no_geom:H5] epoch=2/8 step=125/1086 loss=1.0120
+[train:safeobj_no_geom:H5] epoch=2/8 step=150/1086 loss=1.0342
+[train:safeobj_no_geom:H5] epoch=2/8 step=175/1086 loss=1.0274
+[train:safeobj_no_geom:H5] epoch=2/8 step=200/1086 loss=1.0388
+[train:safeobj_no_geom:H5] epoch=2/8 step=225/1086 loss=1.0269
+[train:safeobj_no_geom:H5] epoch=2/8 step=250/1086 loss=1.0023
+[train:safeobj_no_geom:H5] epoch=2/8 step=275/1086 loss=1.0379
+[train:safeobj_no_geom:H5] epoch=2/8 step=300/1086 loss=1.0363
+[train:safeobj_no_geom:H5] epoch=2/8 step=325/1086 loss=1.0305
+[train:safeobj_no_geom:H5] epoch=2/8 step=350/1086 loss=1.0301
+[train:safeobj_no_geom:H5] epoch=2/8 step=375/1086 loss=1.0142
+[train:safeobj_no_geom:H5] epoch=2/8 step=400/1086 loss=1.0158
+[train:safeobj_no_geom:H5] epoch=2/8 step=425/1086 loss=1.0281
+[train:safeobj_no_geom:H5] epoch=2/8 step=450/1086 loss=1.0142
+[train:safeobj_no_geom:H5] epoch=2/8 step=475/1086 loss=1.0027
+[train:safeobj_no_geom:H5] epoch=2/8 step=500/1086 loss=0.9894
+[train:safeobj_no_geom:H5] epoch=2/8 step=525/1086 loss=1.0283
+[train:safeobj_no_geom:H5] epoch=2/8 step=550/1086 loss=1.0155
+[train:safeobj_no_geom:H5] epoch=2/8 step=575/1086 loss=1.0071
+[train:safeobj_no_geom:H5] epoch=2/8 step=600/1086 loss=1.0228
+[train:safeobj_no_geom:H5] epoch=2/8 step=625/1086 loss=0.9953
+[train:safeobj_no_geom:H5] epoch=2/8 step=650/1086 loss=1.0064
+[train:safeobj_no_geom:H5] epoch=2/8 step=675/1086 loss=1.0204
+[train:safeobj_no_geom:H5] epoch=2/8 step=700/1086 loss=1.0053
+[train:safeobj_no_geom:H5] epoch=2/8 step=725/1086 loss=1.0075
+[train:safeobj_no_geom:H5] epoch=2/8 step=750/1086 loss=1.0251
+[train:safeobj_no_geom:H5] epoch=2/8 step=775/1086 loss=0.9939
+[train:safeobj_no_geom:H5] epoch=2/8 step=800/1086 loss=1.0436
+[train:safeobj_no_geom:H5] epoch=2/8 step=825/1086 loss=1.0089
+[train:safeobj_no_geom:H5] epoch=2/8 step=850/1086 loss=1.0334
+[train:safeobj_no_geom:H5] epoch=2/8 step=875/1086 loss=0.9857
+[train:safeobj_no_geom:H5] epoch=2/8 step=900/1086 loss=1.0009
+[train:safeobj_no_geom:H5] epoch=2/8 step=925/1086 loss=1.0075
+[train:safeobj_no_geom:H5] epoch=2/8 step=950/1086 loss=1.0333
+[train:safeobj_no_geom:H5] epoch=2/8 step=975/1086 loss=0.9964
+[train:safeobj_no_geom:H5] epoch=2/8 step=1000/1086 loss=0.9836
+[train:safeobj_no_geom:H5] epoch=2/8 step=1025/1086 loss=0.9986
+[train:safeobj_no_geom:H5] epoch=2/8 step=1050/1086 loss=1.0036
+[train:safeobj_no_geom:H5] epoch=2/8 step=1075/1086 loss=0.9970
+[epoch done:safeobj_no_geom:H5] epoch=2 train=1.0167 val=1.0381 best=1.0279
+[train:safeobj_no_geom:H5] epoch=3/8 step=0/1086 loss=1.0683
+[train:safeobj_no_geom:H5] epoch=3/8 step=25/1086 loss=1.0001
+[train:safeobj_no_geom:H5] epoch=3/8 step=50/1086 loss=1.0189
+[train:safeobj_no_geom:H5] epoch=3/8 step=75/1086 loss=0.9807
+[train:safeobj_no_geom:H5] epoch=3/8 step=100/1086 loss=0.9954
+[train:safeobj_no_geom:H5] epoch=3/8 step=125/1086 loss=0.9911
+[train:safeobj_no_geom:H5] epoch=3/8 step=150/1086 loss=0.9843
+[train:safeobj_no_geom:H5] epoch=3/8 step=175/1086 loss=0.9898
+[train:safeobj_no_geom:H5] epoch=3/8 step=200/1086 loss=0.9867
+[train:safeobj_no_geom:H5] epoch=3/8 step=225/1086 loss=0.9664
+[train:safeobj_no_geom:H5] epoch=3/8 step=250/1086 loss=0.9904
+[train:safeobj_no_geom:H5] epoch=3/8 step=275/1086 loss=0.9997
+[train:safeobj_no_geom:H5] epoch=3/8 step=300/1086 loss=0.9889
+[train:safeobj_no_geom:H5] epoch=3/8 step=325/1086 loss=0.9902
+[train:safeobj_no_geom:H5] epoch=3/8 step=350/1086 loss=0.9954
+[train:safeobj_no_geom:H5] epoch=3/8 step=375/1086 loss=0.9986
+[train:safeobj_no_geom:H5] epoch=3/8 step=400/1086 loss=1.0036
+[train:safeobj_no_geom:H5] epoch=3/8 step=425/1086 loss=0.9475
+[train:safeobj_no_geom:H5] epoch=3/8 step=450/1086 loss=1.0023
+[train:safeobj_no_geom:H5] epoch=3/8 step=475/1086 loss=0.9737
+[train:safeobj_no_geom:H5] epoch=3/8 step=500/1086 loss=0.9755
+[train:safeobj_no_geom:H5] epoch=3/8 step=525/1086 loss=0.9744
+[train:safeobj_no_geom:H5] epoch=3/8 step=550/1086 loss=0.9926
+[train:safeobj_no_geom:H5] epoch=3/8 step=575/1086 loss=1.0047
+[train:safeobj_no_geom:H5] epoch=3/8 step=600/1086 loss=0.9921
+[train:safeobj_no_geom:H5] epoch=3/8 step=625/1086 loss=0.9697
+[train:safeobj_no_geom:H5] epoch=3/8 step=650/1086 loss=0.9738
+[train:safeobj_no_geom:H5] epoch=3/8 step=675/1086 loss=0.9944
+[train:safeobj_no_geom:H5] epoch=3/8 step=700/1086 loss=0.9563
+[train:safeobj_no_geom:H5] epoch=3/8 step=725/1086 loss=0.9651
+[train:safeobj_no_geom:H5] epoch=3/8 step=750/1086 loss=0.9887
+[train:safeobj_no_geom:H5] epoch=3/8 step=775/1086 loss=0.9759
+[train:safeobj_no_geom:H5] epoch=3/8 step=800/1086 loss=0.9968
+[train:safeobj_no_geom:H5] epoch=3/8 step=825/1086 loss=0.9602
+[train:safeobj_no_geom:H5] epoch=3/8 step=850/1086 loss=0.9618
+[train:safeobj_no_geom:H5] epoch=3/8 step=875/1086 loss=0.9729
+[train:safeobj_no_geom:H5] epoch=3/8 step=900/1086 loss=0.9699
+[train:safeobj_no_geom:H5] epoch=3/8 step=925/1086 loss=0.9618
+[train:safeobj_no_geom:H5] epoch=3/8 step=950/1086 loss=0.9472
+[train:safeobj_no_geom:H5] epoch=3/8 step=975/1086 loss=0.9607
+[train:safeobj_no_geom:H5] epoch=3/8 step=1000/1086 loss=0.9670
+[train:safeobj_no_geom:H5] epoch=3/8 step=1025/1086 loss=0.9435
+[train:safeobj_no_geom:H5] epoch=3/8 step=1050/1086 loss=0.9816
+[train:safeobj_no_geom:H5] epoch=3/8 step=1075/1086 loss=0.9654
+[epoch done:safeobj_no_geom:H5] epoch=3 train=0.9812 val=1.0483 best=1.0279
+[train:safeobj_no_geom:H5] epoch=4/8 step=0/1086 loss=0.9430
+[train:safeobj_no_geom:H5] epoch=4/8 step=25/1086 loss=0.9460
+[train:safeobj_no_geom:H5] epoch=4/8 step=50/1086 loss=0.9516
+[train:safeobj_no_geom:H5] epoch=4/8 step=75/1086 loss=0.9384
+[train:safeobj_no_geom:H5] epoch=4/8 step=100/1086 loss=0.9312
+[train:safeobj_no_geom:H5] epoch=4/8 step=125/1086 loss=0.9624
+[train:safeobj_no_geom:H5] epoch=4/8 step=150/1086 loss=0.9498
+[train:safeobj_no_geom:H5] epoch=4/8 step=175/1086 loss=0.9634
+[train:safeobj_no_geom:H5] epoch=4/8 step=200/1086 loss=0.9267
+[train:safeobj_no_geom:H5] epoch=4/8 step=225/1086 loss=0.9215
+[train:safeobj_no_geom:H5] epoch=4/8 step=250/1086 loss=0.9321
+[train:safeobj_no_geom:H5] epoch=4/8 step=275/1086 loss=0.9056
+[train:safeobj_no_geom:H5] epoch=4/8 step=300/1086 loss=0.9399
+[train:safeobj_no_geom:H5] epoch=4/8 step=325/1086 loss=0.9637
+[train:safeobj_no_geom:H5] epoch=4/8 step=350/1086 loss=0.9226
+[train:safeobj_no_geom:H5] epoch=4/8 step=375/1086 loss=0.9840
+[train:safeobj_no_geom:H5] epoch=4/8 step=400/1086 loss=0.9592
+[train:safeobj_no_geom:H5] epoch=4/8 step=425/1086 loss=0.9416
+[train:safeobj_no_geom:H5] epoch=4/8 step=450/1086 loss=0.9419
+[train:safeobj_no_geom:H5] epoch=4/8 step=475/1086 loss=0.9198
+[train:safeobj_no_geom:H5] epoch=4/8 step=500/1086 loss=0.9180
+[train:safeobj_no_geom:H5] epoch=4/8 step=525/1086 loss=0.9331
+[train:safeobj_no_geom:H5] epoch=4/8 step=550/1086 loss=0.9472
+[train:safeobj_no_geom:H5] epoch=4/8 step=575/1086 loss=0.9406
+[train:safeobj_no_geom:H5] epoch=4/8 step=600/1086 loss=0.9820
+[train:safeobj_no_geom:H5] epoch=4/8 step=625/1086 loss=0.9242
+[train:safeobj_no_geom:H5] epoch=4/8 step=650/1086 loss=0.9089
+[train:safeobj_no_geom:H5] epoch=4/8 step=675/1086 loss=0.9260
+[train:safeobj_no_geom:H5] epoch=4/8 step=700/1086 loss=0.9771
+[train:safeobj_no_geom:H5] epoch=4/8 step=725/1086 loss=0.9615
+[train:safeobj_no_geom:H5] epoch=4/8 step=750/1086 loss=0.9450
+[train:safeobj_no_geom:H5] epoch=4/8 step=775/1086 loss=0.9334
+[train:safeobj_no_geom:H5] epoch=4/8 step=800/1086 loss=0.9488
+[train:safeobj_no_geom:H5] epoch=4/8 step=825/1086 loss=0.9334
+[train:safeobj_no_geom:H5] epoch=4/8 step=850/1086 loss=0.9331
+[train:safeobj_no_geom:H5] epoch=4/8 step=875/1086 loss=0.9696
+[train:safeobj_no_geom:H5] epoch=4/8 step=900/1086 loss=0.9348
+[train:safeobj_no_geom:H5] epoch=4/8 step=925/1086 loss=0.9107
+[train:safeobj_no_geom:H5] epoch=4/8 step=950/1086 loss=0.9414
+[train:safeobj_no_geom:H5] epoch=4/8 step=975/1086 loss=0.9153
+[train:safeobj_no_geom:H5] epoch=4/8 step=1000/1086 loss=0.9713
+[train:safeobj_no_geom:H5] epoch=4/8 step=1025/1086 loss=0.9392
+[train:safeobj_no_geom:H5] epoch=4/8 step=1050/1086 loss=0.9469
+[train:safeobj_no_geom:H5] epoch=4/8 step=1075/1086 loss=0.9437
+[epoch done:safeobj_no_geom:H5] epoch=4 train=0.9394 val=1.0469 best=1.0279
+[train:safeobj_no_geom:H5] epoch=5/8 step=0/1086 loss=0.8077
+[train:safeobj_no_geom:H5] epoch=5/8 step=25/1086 loss=0.9296
+[train:safeobj_no_geom:H5] epoch=5/8 step=50/1086 loss=0.9367
+[train:safeobj_no_geom:H5] epoch=5/8 step=75/1086 loss=0.9189
+[train:safeobj_no_geom:H5] epoch=5/8 step=100/1086 loss=0.9034
+[train:safeobj_no_geom:H5] epoch=5/8 step=125/1086 loss=0.9616
+[train:safeobj_no_geom:H5] epoch=5/8 step=150/1086 loss=0.9153
+[train:safeobj_no_geom:H5] epoch=5/8 step=175/1086 loss=0.8956
+[train:safeobj_no_geom:H5] epoch=5/8 step=200/1086 loss=0.9161
+[train:safeobj_no_geom:H5] epoch=5/8 step=225/1086 loss=0.9233
+[train:safeobj_no_geom:H5] epoch=5/8 step=250/1086 loss=0.9037
+[train:safeobj_no_geom:H5] epoch=5/8 step=275/1086 loss=0.9232
+[train:safeobj_no_geom:H5] epoch=5/8 step=300/1086 loss=0.9273
+[train:safeobj_no_geom:H5] epoch=5/8 step=325/1086 loss=0.9299
+[train:safeobj_no_geom:H5] epoch=5/8 step=350/1086 loss=0.9142
+[train:safeobj_no_geom:H5] epoch=5/8 step=375/1086 loss=0.9450
+[train:safeobj_no_geom:H5] epoch=5/8 step=400/1086 loss=0.9255
+[train:safeobj_no_geom:H5] epoch=5/8 step=425/1086 loss=0.9241
+[train:safeobj_no_geom:H5] epoch=5/8 step=450/1086 loss=0.8958
+[train:safeobj_no_geom:H5] epoch=5/8 step=475/1086 loss=0.8945
+[train:safeobj_no_geom:H5] epoch=5/8 step=500/1086 loss=0.8737
+[train:safeobj_no_geom:H5] epoch=5/8 step=525/1086 loss=0.9025
+[train:safeobj_no_geom:H5] epoch=5/8 step=550/1086 loss=0.9144
+[train:safeobj_no_geom:H5] epoch=5/8 step=575/1086 loss=0.9367
+[train:safeobj_no_geom:H5] epoch=5/8 step=600/1086 loss=0.8872
+[train:safeobj_no_geom:H5] epoch=5/8 step=625/1086 loss=0.8903
+[train:safeobj_no_geom:H5] epoch=5/8 step=650/1086 loss=0.8718
+[train:safeobj_no_geom:H5] epoch=5/8 step=675/1086 loss=0.9059
+[train:safeobj_no_geom:H5] epoch=5/8 step=700/1086 loss=0.9123
+[train:safeobj_no_geom:H5] epoch=5/8 step=725/1086 loss=0.8915
+[train:safeobj_no_geom:H5] epoch=5/8 step=750/1086 loss=0.9017
+[train:safeobj_no_geom:H5] epoch=5/8 step=775/1086 loss=0.8928
+[train:safeobj_no_geom:H5] epoch=5/8 step=800/1086 loss=0.8881
+[train:safeobj_no_geom:H5] epoch=5/8 step=825/1086 loss=0.8885
+[train:safeobj_no_geom:H5] epoch=5/8 step=850/1086 loss=0.8772
+[train:safeobj_no_geom:H5] epoch=5/8 step=875/1086 loss=0.8753
+[train:safeobj_no_geom:H5] epoch=5/8 step=900/1086 loss=0.9029
+[train:safeobj_no_geom:H5] epoch=5/8 step=925/1086 loss=0.8928
+[train:safeobj_no_geom:H5] epoch=5/8 step=950/1086 loss=0.9219
+[train:safeobj_no_geom:H5] epoch=5/8 step=975/1086 loss=0.8996
+[train:safeobj_no_geom:H5] epoch=5/8 step=1000/1086 loss=0.8892
+[train:safeobj_no_geom:H5] epoch=5/8 step=1025/1086 loss=0.8800
+[train:safeobj_no_geom:H5] epoch=5/8 step=1050/1086 loss=0.8845
+[train:safeobj_no_geom:H5] epoch=5/8 step=1075/1086 loss=0.8904
+[epoch done:safeobj_no_geom:H5] epoch=5 train=0.9053 val=1.0606 best=1.0279
+[train:safeobj_no_geom:H5] epoch=6/8 step=0/1086 loss=0.9473
+[train:safeobj_no_geom:H5] epoch=6/8 step=25/1086 loss=0.8859
+[train:safeobj_no_geom:H5] epoch=6/8 step=50/1086 loss=0.8804
+[train:safeobj_no_geom:H5] epoch=6/8 step=75/1086 loss=0.8824
+[train:safeobj_no_geom:H5] epoch=6/8 step=100/1086 loss=0.8699
+[train:safeobj_no_geom:H5] epoch=6/8 step=125/1086 loss=0.9084
+[train:safeobj_no_geom:H5] epoch=6/8 step=150/1086 loss=0.8442
+[train:safeobj_no_geom:H5] epoch=6/8 step=175/1086 loss=0.8940
+[train:safeobj_no_geom:H5] epoch=6/8 step=200/1086 loss=0.8974
+[train:safeobj_no_geom:H5] epoch=6/8 step=225/1086 loss=0.8860
+[train:safeobj_no_geom:H5] epoch=6/8 step=250/1086 loss=0.8745
+[train:safeobj_no_geom:H5] epoch=6/8 step=275/1086 loss=0.8504
+[train:safeobj_no_geom:H5] epoch=6/8 step=300/1086 loss=0.9140
+[train:safeobj_no_geom:H5] epoch=6/8 step=325/1086 loss=0.8669
+[train:safeobj_no_geom:H5] epoch=6/8 step=350/1086 loss=0.8596
+[train:safeobj_no_geom:H5] epoch=6/8 step=375/1086 loss=0.8354
+[train:safeobj_no_geom:H5] epoch=6/8 step=400/1086 loss=0.8535
+[train:safeobj_no_geom:H5] epoch=6/8 step=425/1086 loss=0.8731
+[train:safeobj_no_geom:H5] epoch=6/8 step=450/1086 loss=0.8769
+[train:safeobj_no_geom:H5] epoch=6/8 step=475/1086 loss=0.8776
+[train:safeobj_no_geom:H5] epoch=6/8 step=500/1086 loss=0.8320
+[train:safeobj_no_geom:H5] epoch=6/8 step=525/1086 loss=0.8430
+[train:safeobj_no_geom:H5] epoch=6/8 step=550/1086 loss=0.8922
+[train:safeobj_no_geom:H5] epoch=6/8 step=575/1086 loss=0.8621
+[train:safeobj_no_geom:H5] epoch=6/8 step=600/1086 loss=0.8816
+[train:safeobj_no_geom:H5] epoch=6/8 step=625/1086 loss=0.8618
+[train:safeobj_no_geom:H5] epoch=6/8 step=650/1086 loss=0.8940
+[train:safeobj_no_geom:H5] epoch=6/8 step=675/1086 loss=0.8484
+[train:safeobj_no_geom:H5] epoch=6/8 step=700/1086 loss=0.8427
+[train:safeobj_no_geom:H5] epoch=6/8 step=725/1086 loss=0.8514
+[train:safeobj_no_geom:H5] epoch=6/8 step=750/1086 loss=0.8471
+[train:safeobj_no_geom:H5] epoch=6/8 step=775/1086 loss=0.8801
+[train:safeobj_no_geom:H5] epoch=6/8 step=800/1086 loss=0.8654
+[train:safeobj_no_geom:H5] epoch=6/8 step=825/1086 loss=0.8343
+[train:safeobj_no_geom:H5] epoch=6/8 step=850/1086 loss=0.8524
+[train:safeobj_no_geom:H5] epoch=6/8 step=875/1086 loss=0.8867
+[train:safeobj_no_geom:H5] epoch=6/8 step=900/1086 loss=0.8918
+[train:safeobj_no_geom:H5] epoch=6/8 step=925/1086 loss=0.8695
+[train:safeobj_no_geom:H5] epoch=6/8 step=950/1086 loss=0.8726
+[train:safeobj_no_geom:H5] epoch=6/8 step=975/1086 loss=0.8366
+[train:safeobj_no_geom:H5] epoch=6/8 step=1000/1086 loss=0.8806
+[train:safeobj_no_geom:H5] epoch=6/8 step=1025/1086 loss=0.8403
+[train:safeobj_no_geom:H5] epoch=6/8 step=1050/1086 loss=0.8589
+[train:safeobj_no_geom:H5] epoch=6/8 step=1075/1086 loss=0.8507
+[epoch done:safeobj_no_geom:H5] epoch=6 train=0.8690 val=1.0740 best=1.0279
+[train:safeobj_no_geom:H5] epoch=7/8 step=0/1086 loss=0.9870
+[train:safeobj_no_geom:H5] epoch=7/8 step=25/1086 loss=0.8152
+[train:safeobj_no_geom:H5] epoch=7/8 step=50/1086 loss=0.8240
+[train:safeobj_no_geom:H5] epoch=7/8 step=75/1086 loss=0.8351
+[train:safeobj_no_geom:H5] epoch=7/8 step=100/1086 loss=0.8370
+[train:safeobj_no_geom:H5] epoch=7/8 step=125/1086 loss=0.8189
+[train:safeobj_no_geom:H5] epoch=7/8 step=150/1086 loss=0.8528
+[train:safeobj_no_geom:H5] epoch=7/8 step=175/1086 loss=0.8262
+[train:safeobj_no_geom:H5] epoch=7/8 step=200/1086 loss=0.8701
+[train:safeobj_no_geom:H5] epoch=7/8 step=225/1086 loss=0.8319
+[train:safeobj_no_geom:H5] epoch=7/8 step=250/1086 loss=0.8328
+[train:safeobj_no_geom:H5] epoch=7/8 step=275/1086 loss=0.8382
+[train:safeobj_no_geom:H5] epoch=7/8 step=300/1086 loss=0.8611
+[train:safeobj_no_geom:H5] epoch=7/8 step=325/1086 loss=0.8623
+[train:safeobj_no_geom:H5] epoch=7/8 step=350/1086 loss=0.8483
+[train:safeobj_no_geom:H5] epoch=7/8 step=375/1086 loss=0.8279
+[train:safeobj_no_geom:H5] epoch=7/8 step=400/1086 loss=0.8085
+[train:safeobj_no_geom:H5] epoch=7/8 step=425/1086 loss=0.8362
+[train:safeobj_no_geom:H5] epoch=7/8 step=450/1086 loss=0.8274
+[train:safeobj_no_geom:H5] epoch=7/8 step=475/1086 loss=0.8838
+[train:safeobj_no_geom:H5] epoch=7/8 step=500/1086 loss=0.8690
+[train:safeobj_no_geom:H5] epoch=7/8 step=525/1086 loss=0.8128
+[train:safeobj_no_geom:H5] epoch=7/8 step=550/1086 loss=0.8700
+[train:safeobj_no_geom:H5] epoch=7/8 step=575/1086 loss=0.8498
+[train:safeobj_no_geom:H5] epoch=7/8 step=600/1086 loss=0.8498
+[train:safeobj_no_geom:H5] epoch=7/8 step=625/1086 loss=0.8336
+[train:safeobj_no_geom:H5] epoch=7/8 step=650/1086 loss=0.8376
+[train:safeobj_no_geom:H5] epoch=7/8 step=675/1086 loss=0.8264
+[train:safeobj_no_geom:H5] epoch=7/8 step=700/1086 loss=0.8335
+[train:safeobj_no_geom:H5] epoch=7/8 step=725/1086 loss=0.8277
+[train:safeobj_no_geom:H5] epoch=7/8 step=750/1086 loss=0.8601
+[train:safeobj_no_geom:H5] epoch=7/8 step=775/1086 loss=0.8025
+[train:safeobj_no_geom:H5] epoch=7/8 step=800/1086 loss=0.8404
+[train:safeobj_no_geom:H5] epoch=7/8 step=825/1086 loss=0.8376
+[train:safeobj_no_geom:H5] epoch=7/8 step=850/1086 loss=0.8355
+[train:safeobj_no_geom:H5] epoch=7/8 step=875/1086 loss=0.8203
+[train:safeobj_no_geom:H5] epoch=7/8 step=900/1086 loss=0.8116
+[train:safeobj_no_geom:H5] epoch=7/8 step=925/1086 loss=0.8452
+[train:safeobj_no_geom:H5] epoch=7/8 step=950/1086 loss=0.8083
+[train:safeobj_no_geom:H5] epoch=7/8 step=975/1086 loss=0.8218
+[train:safeobj_no_geom:H5] epoch=7/8 step=1000/1086 loss=0.8006
+[train:safeobj_no_geom:H5] epoch=7/8 step=1025/1086 loss=0.8788
+[train:safeobj_no_geom:H5] epoch=7/8 step=1050/1086 loss=0.8109
+[train:safeobj_no_geom:H5] epoch=7/8 step=1075/1086 loss=0.8335
+[epoch done:safeobj_no_geom:H5] epoch=7 train=0.8365 val=1.0669 best=1.0279
+[train:safeobj_no_geom:H5] epoch=8/8 step=0/1086 loss=0.9108
+[train:safeobj_no_geom:H5] epoch=8/8 step=25/1086 loss=0.8223
+[train:safeobj_no_geom:H5] epoch=8/8 step=50/1086 loss=0.8378
+[train:safeobj_no_geom:H5] epoch=8/8 step=75/1086 loss=0.8115
+[train:safeobj_no_geom:H5] epoch=8/8 step=100/1086 loss=0.7696
+[train:safeobj_no_geom:H5] epoch=8/8 step=125/1086 loss=0.8264
+[train:safeobj_no_geom:H5] epoch=8/8 step=150/1086 loss=0.8480
+[train:safeobj_no_geom:H5] epoch=8/8 step=175/1086 loss=0.8430
+[train:safeobj_no_geom:H5] epoch=8/8 step=200/1086 loss=0.8330
+[train:safeobj_no_geom:H5] epoch=8/8 step=225/1086 loss=0.8239
+[train:safeobj_no_geom:H5] epoch=8/8 step=250/1086 loss=0.8208
+[train:safeobj_no_geom:H5] epoch=8/8 step=275/1086 loss=0.8058
+[train:safeobj_no_geom:H5] epoch=8/8 step=300/1086 loss=0.7764
+[train:safeobj_no_geom:H5] epoch=8/8 step=325/1086 loss=0.7851
+[train:safeobj_no_geom:H5] epoch=8/8 step=350/1086 loss=0.7883
+[train:safeobj_no_geom:H5] epoch=8/8 step=375/1086 loss=0.8000
+[train:safeobj_no_geom:H5] epoch=8/8 step=400/1086 loss=0.8289
+[train:safeobj_no_geom:H5] epoch=8/8 step=425/1086 loss=0.8027
+[train:safeobj_no_geom:H5] epoch=8/8 step=450/1086 loss=0.8506
+[train:safeobj_no_geom:H5] epoch=8/8 step=475/1086 loss=0.7845
+[train:safeobj_no_geom:H5] epoch=8/8 step=500/1086 loss=0.8100
+[train:safeobj_no_geom:H5] epoch=8/8 step=525/1086 loss=0.7893
+[train:safeobj_no_geom:H5] epoch=8/8 step=550/1086 loss=0.8388
+[train:safeobj_no_geom:H5] epoch=8/8 step=575/1086 loss=0.8091
+[train:safeobj_no_geom:H5] epoch=8/8 step=600/1086 loss=0.8272
+[train:safeobj_no_geom:H5] epoch=8/8 step=625/1086 loss=0.8028
+[train:safeobj_no_geom:H5] epoch=8/8 step=650/1086 loss=0.7903
+[train:safeobj_no_geom:H5] epoch=8/8 step=675/1086 loss=0.8041
+[train:safeobj_no_geom:H5] epoch=8/8 step=700/1086 loss=0.8250
+[train:safeobj_no_geom:H5] epoch=8/8 step=725/1086 loss=0.7978
+[train:safeobj_no_geom:H5] epoch=8/8 step=750/1086 loss=0.8267
+[train:safeobj_no_geom:H5] epoch=8/8 step=775/1086 loss=0.8267
+[train:safeobj_no_geom:H5] epoch=8/8 step=800/1086 loss=0.7982
+[train:safeobj_no_geom:H5] epoch=8/8 step=825/1086 loss=0.8394
+[train:safeobj_no_geom:H5] epoch=8/8 step=850/1086 loss=0.7674
+[train:safeobj_no_geom:H5] epoch=8/8 step=875/1086 loss=0.7846
+[train:safeobj_no_geom:H5] epoch=8/8 step=900/1086 loss=0.7840
+[train:safeobj_no_geom:H5] epoch=8/8 step=925/1086 loss=0.8075
+[train:safeobj_no_geom:H5] epoch=8/8 step=950/1086 loss=0.8250
+[train:safeobj_no_geom:H5] epoch=8/8 step=975/1086 loss=0.7695
+[train:safeobj_no_geom:H5] epoch=8/8 step=1000/1086 loss=0.8018
+[train:safeobj_no_geom:H5] epoch=8/8 step=1025/1086 loss=0.7896
+[train:safeobj_no_geom:H5] epoch=8/8 step=1050/1086 loss=0.7980
+[train:safeobj_no_geom:H5] epoch=8/8 step=1075/1086 loss=0.8134
+[epoch done:safeobj_no_geom:H5] epoch=8 train=0.8068 val=1.0814 best=1.0279
+[done train] best=/home/tahiti/SafeObjWorld/runs_musthave/models/safeobj_no_geom/H5/best.pt

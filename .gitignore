@@ -1,0 +1,100 @@
+# ============================================================
+# SafeObjWorld ignore rules
+# ============================================================
+
+# ---- no README for first push ----
+README.md
+README.*
+
+# ---- datasets / raw data ----
+/data/
+/datasets/
+/dataset/
+/DAVIS/
+/DAVIS2017/
+/ECCV_DATASETS*/
+/*DAVIS*trainval*
+*DAVIS-2017*
+
+# ---- archives ----
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ---- Python environments ----
+.venv/
+.venv*/
+venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- ML weights/checkpoints/heavy model files ----
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.engine
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+
+# ---- HuggingFace / model caches ----
+hf_cache/
+huggingface/
+.cache/
+cache/
+models_cache/
+model_cache/
+wandb/
+mlruns/
+
+# ---- temporary files ----
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---- giant raw arrays ----
+*.npy
+*.npz
+
+# ---- explicitly keep lightweight useful outputs ----
+!*.csv
+!*.tsv
+!*.txt
+!*.md
+!*.json
+!*.yaml
+!*.yml
+!*.py
+!*.sh
+!*.ipynb
+!*.tex
+!*.png
+!*.jpg
+!*.jpeg
+!*.pdf
+!*.svg
+!*.log
+
+# but still no README
+README.md
+README.*
