@@ -1,6 +1,3 @@
-Да, вот **готовый `README.md` одним блоком для копирования**:
-
-````markdown
 # SafeObjWorld
 
 <p align="center">
